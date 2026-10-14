@@ -1,4 +1,4 @@
-// 문제 :
+// 문제 : 전화번호 목록중에서 서로 접두사인것을 찾고 있으면 false 없으면 true출력
 
 // 새로배운거 : A.startsWith(B) A가 B로 시작하는지 포함은 contains
 // HashSet.contains(value) 해시셋에 해당값이 존재하는지 확인
