@@ -23,7 +23,7 @@ Queue<형> queue = new ArrayDeque<>();
 queue.offer(10);
 queue.add(10);  // 둘다 데이터 추가
 
-queue.pull();  // 맨앞 데이터 제거 및 반환
+queue.poll();  // 맨앞 데이터 제거 및 반환
 queue.peek():  // 맨앞 데이터 확인(제거는 하지 않음)
 queue.isEmpty();  // 비어있는지 확인 
 queue.size();  // 데이터 갯수 확인, 길이
