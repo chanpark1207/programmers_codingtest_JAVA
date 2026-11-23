@@ -1,1 +1,32 @@
+<힙>  Heap
+최댓값 또는 최솟값을 빠르게 조회하고 삭제하기 위한 완전 이진 트리 기반 자료구조이다.
 
+import java.util.PriorityQueue;
+
+- 기본이 최솟값 기준인데 최대값을 하려면 collections 사용
+import java.util.Collections;
+
+
+*선언
+(최솟값이 우선순위)
+PriorityQueue<형> 이름 = new PriorityQueue<>();
+()안에는 초기값을 넣을수 있음
+
+(최댓값이 우선순위)
+PriorityQueue<형> 이름 = new PriorityQueue<>(Collections.reverseOrder());
+
+
+*기본 명령어 / 거의 큐와 비슷
+.add(value) - 삽입
+.offer(value) - 삽입
+.poll() - 우선순위가 가장 높은 데이터 꺼내고 삭제
+.peek() - 우선순위가 높은 데이터 확인(삭제는 하지 않음)
+.remove() - 우선순위가 가장 높은 데이터 꺼내고 삭제(poll과 거의 동일)
+.remove(value) - 특정값 삭제(그냥 삭제만 그리고 반환값이 boolean임)
+.size() - 데이터 개수, 길이
+.isEmpty() - 비어있는지 화인
+.clear() - 모든 데이터 삭제
+.contains(value) - 포함되어있는지
+
+remove와 contains만 시간복잡도가 O(N)임
+poll과 remove의 차이는 poll은 값이 없으면 null remove는 값이 없으면 예외 발생
